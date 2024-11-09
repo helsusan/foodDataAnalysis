@@ -554,11 +554,3 @@ for label in unique_labels:
 
         for result in results:
             st.write(f"The best area to produce in Cluster {result['cluster_label']} is {result['best_area']} and products with a total production of {result['total_production']}.")
-
-# for label in unique_labels:
-#     if label != -1:
-#         cluster_data = clustered[clustered['cluster_label'] == label]
-#         max_production = cluster_data['total_production_1961_2013'].max()
-#         best_area = cluster_data[cluster_data['total_production_1961_2013'] == max_production].iloc[0]
-#         print(f"\nThe best area to produce in Cluster {label} is {best_area['Area']} and products with a total production of {best_area['total_production_1961_2013']}.")
-        
